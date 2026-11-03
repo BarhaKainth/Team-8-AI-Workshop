@@ -24,7 +24,8 @@ async function renderTable() {
     nameCell.appendChild(organization);
 
     const deadlineCell = addCell(row, formatDate(opportunity.deadline));
-    showDeadline(row, deadlineCell, opportunity); // in deadlines.js
+    const deadlineStatusCell = addCell(row, "");
+    showDeadline(row, deadlineStatusCell, opportunity); // in deadlines.js
 
     const ownerCell = addCell(row, "");
     const avatar = document.createElement("span");
