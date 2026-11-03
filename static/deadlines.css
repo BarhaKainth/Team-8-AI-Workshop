@@ -1,1 +1,19 @@
-/* Styles for deadlines.js. Empty for now. */
+.deadline-label {
+  display: block;
+  width: fit-content;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.deadline-overdue {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.deadline-soon {
+  background: #fef3c7;
+  color: #854d0e;
+}
