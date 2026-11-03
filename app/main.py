@@ -25,6 +25,7 @@ def list_opportunities():
     result = []
     for opportunity in load_opportunities():
         row = opportunity.model_dump(mode="json")
-        row["days_left"] = days_left(opportunity.deadline)
+        # Correct for days_left truncating against the current time, not calendar dates.
+        row["days_left"] = days_left(opportunity.deadline) + 1
         result.append(row)
     return result

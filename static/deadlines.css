@@ -1,1 +1,27 @@
-/* Styles for deadlines.js. Empty for now. */
+.deadline-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.deadline-upcoming {
+  background: #e7f5ec;
+  color: #166534;
+}
+
+.deadline-soon {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.deadline-today {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.deadline-overdue {
+  background: #fdecec;
+  color: #991b1b;
+}
